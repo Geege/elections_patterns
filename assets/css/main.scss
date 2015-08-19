@@ -2,6 +2,10 @@ html {
     background-color: white;
 }
 
+a {
+  color: #424242;
+}
+
 // // 
 // // Project colors ---------------------
 
@@ -9,6 +13,8 @@ $color-primary: #7F7758;
 $color-secondary: #FEF5CE;
 $color-grey: #BFBFBF;
 $color-body: black;
+
+$ps-brand-color: #F2AC17;
 
 
 // // 
@@ -107,6 +113,9 @@ $font-body: 'Lato', sans-serif;
 	background-color: $other-dark;
 }
 
+.brandcolor {
+  color: $ps-brand-color;
+}
 
 // // 
 // // Fonts-----------------------
@@ -119,4 +128,23 @@ body {
 .font h1, .font h2, .font h3, .font h4 {
   font-family: $font-title;
   color: $color-primary;
+}
+
+// // 
+// // Buttons-----------------------
+
+.btn {
+  background-color: $color-grey;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
+}
+
+
+button.btn:hover {
+  background-color: $color-primary;
+  color: #fff;
 }
