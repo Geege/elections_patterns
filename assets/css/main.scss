@@ -2,7 +2,7 @@ html {
     background-color: white;
 }
 
-// // Party colors
+// // 
 // // -------------------------
 
 $pc-dark: #1A4782;
@@ -17,9 +17,12 @@ $bloc-dark:#4E99DC;
 $bloc-light:#66C3DC;
 $other-dark: #77117F;
 
-$main-font: 'Merriweather', serif;
+$font-title: 'Merriweather', serif;
+$font-body: 'Lato', sans-serif;
 
 
+// // 
+// // Colors -----------------------
 .color-containers {
     margin: 0 -5px;
 	overflow: hidden;
@@ -81,3 +84,13 @@ $main-font: 'Merriweather', serif;
 }
 
 
+// // 
+// // Fonts-----------------------
+
+body {
+  font-family: $font-body;
+}
+
+.font h1, .font h2, .font h3, .font h4 {
+  font-family: $font-title;
+}
