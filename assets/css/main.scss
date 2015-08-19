@@ -1,0 +1,81 @@
+html {
+    background-color: white;
+}
+
+// // Brand colors
+// // -------------------------
+
+$pc-dark: #1A4782;
+$pc-light:#7CA4BF;
+$ndp-dark: #F37221;
+$ndp-light: #FEA66F;
+$lib-dark:#D71920;
+$lib-light: #FE555F;
+$green-dark: #378D30;
+$green-light: #7FBF7A;
+$bloc-dark:#4E99DC;
+$bloc-light:#66C3DC;
+$other-dark: #77117F;
+
+
+.color-containers {
+    margin: 0 -5px;
+	overflow: hidden;
+}
+
+.color-container {
+	float: left;
+	width: 100px;
+	height: 100px;
+	margin: 0 5px;
+	border-radius: 3px;
+    color: grey;
+}
+
+
+.color-containers .pc-dark {
+	background-color: $pc-dark;
+    
+}
+
+.color-containers .pc-light {
+	background-color: $pc-light;
+}
+
+.color-containers .ndp-dark {
+	background-color: $ndp-dark;
+}
+
+.color-containers .ndp-light {
+	background-color: $ndp-light;
+}
+
+.color-containers .lib-dark {
+	background-color: $lib-dark;
+}
+
+.color-containers .lib-light {
+	background-color: $lib-light;
+}
+
+.color-containers .green-dark {
+	background-color: $green-dark;
+}
+
+.color-containers .green-light {
+	background-color: $green-light;
+}
+
+.color-containers .bloc-dark {
+	background-color: $bloc-dark;
+}
+
+.color-containers .bloc-light {
+	background-color: $bloc-light;
+}
+
+.color-containers .other-dark {
+	background-color: $other-dark;
+}
+
+
