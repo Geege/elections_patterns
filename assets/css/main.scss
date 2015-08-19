@@ -3,7 +3,16 @@ html {
 }
 
 // // 
-// // -------------------------
+// // Project colors ---------------------
+
+$color-primary: #7F7758;
+$color-secondary: #FEF5CE;
+$color-grey: #BFBFBF;
+$color-body: black;
+
+
+// // 
+// // Party colors-------------------------
 
 $pc-dark: #1A4782;
 $pc-light:#7CA4BF;
@@ -22,7 +31,7 @@ $font-body: 'Lato', sans-serif;
 
 
 // // 
-// // Colors -----------------------
+// // Colors ------------------------------
 .color-containers {
     margin: 0 -5px;
 	overflow: hidden;
@@ -37,6 +46,21 @@ $font-body: 'Lato', sans-serif;
     color: grey;
 }
 
+.color-containers .color-primary {
+	background-color: $color-primary;
+}
+
+.color-containers .color-secondary {
+	background-color: $color-secondary;
+}
+
+.color-containers .color-grey {
+	background-color: $color-grey;
+}
+
+.color-containers .color-body {
+	background-color: $color-body;
+}
 
 .color-containers .pc-dark {
 	background-color: $pc-dark;
@@ -89,8 +113,10 @@ $font-body: 'Lato', sans-serif;
 
 body {
   font-family: $font-body;
+  color: $color-body;
 }
 
 .font h1, .font h2, .font h3, .font h4 {
   font-family: $font-title;
+  color: $color-primary;
 }
