@@ -1,8 +1,6 @@
 $(document).ready(function () {
- 
-  d3.select("body").append("p").text("I work");
-  
-  var data = [
+
+var data = [
    {
     "year": 2015,
     "color": "#7F7758", 
@@ -120,56 +118,23 @@ $(document).ready(function () {
     ]
   }
 ]
-
-
-var chart = nv.models.multiBarHorizontalChart();
-  chart.width(600)
-  //chart.title("Electoral seats").titleOffset(-10);
-  chart.height(900);
   
-  
-  nv.addGraph(function() {
-  var chart = nv.models.multiBarHorizontalChart()
-      .x(function(d) { return d.province })
-      .y(function(d) { return d.seats })
-      .margin({top: 30, right: 20, bottom: 50, left: 30})
-      .showValues(true)
-      .tooltips(false)
-      .showControls(false)
-      .groupSpacing(.5)
-      .yDomain([1,121])
-      .xRange([0, 600])
-      .yRange([0, 900]);
-    
-    chart.yAxis
-      .tickFormat(d3.format(', 5f'));
-    
-  
-    
-    d3.select("#chart svg")
-        .datum(data)
-      .transition().duration(250)
-        .call(chart);
-    
-   nv.utils.windowResize(chart.update);
-    // console.log("Work here");
-    return chart;
- });
-  
-});
 
 
 
-/**
 
-var data = [43, 23, 16, 15, 8];
-
-var width = 500,
+  var margin = {top: 20, right: 20, bottom: 30, left: 40},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom;
     barHeight = 25;
 
-var x = d3.scale.linear()
-    .domain([0, d3.max(data)])
+  
+  var x = d3.scale.linear()
     .range([0, width]);
+  
+  x.domain([0, d3.max(data, function(d) {return d.year})]);
+  
+  
 
 //creating svg
 
@@ -183,11 +148,13 @@ var bar = chart.selectAll("g")
   .enter().append("g")
     .attr("transform", function(d, i) { return "translate(0," + i * barHeight + ")"; });
 
-
+   
+   
 bar.append("rect")
-    .attr("width", "0")
+    .attr("width", function(d){ return x(d.values.seats);})
     .attr("height", barHeight - 1);
 
+console.log("Working here");    
 
 //creating transition
 d3.selectAll("rect")
@@ -202,5 +169,10 @@ bar.append("text")
     .attr("y", barHeight / 2)
     .attr("dy", ".35em")
     .text(function(d) { return d; }); 
-    
-**/
+
+  
+ 
+});
+
+
+
