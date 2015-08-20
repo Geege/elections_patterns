@@ -9,8 +9,9 @@ a {
 // // 
 // // Project colors ---------------------
 
-$color-primary: #7F7758;
-$color-secondary: #FEF5CE;
+$color-header:#7F7758;
+$color-primary: #C9BA81;
+$color-secondary: #FEE782;
 $color-grey: #BFBFBF;
 $color-body: black;
 
@@ -50,6 +51,10 @@ $font-body: 'Lato', sans-serif;
 	margin: 0 5px 10px;
 	border-radius: 3px;
     color: grey;
+}
+
+.color-containers .color-header {
+	background-color: $color-header;
 }
 
 .color-containers .color-primary {
@@ -127,17 +132,18 @@ body {
 
 .font h1, .font h2, .font h3, .font h4 {
   font-family: $font-title;
-  color: $color-primary;
+  color: $color-header;
 }
 
 // // 
 // // Buttons-----------------------
 
-.btn {
+button.btn {
   background-color: $color-grey;
   border: none;
   color: #fff;
   border-radius: 0px;
+  margin-bottom: 10px;
   
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
@@ -147,4 +153,25 @@ body {
 button.btn:hover {
   background-color: $color-primary;
   color: #fff;
+}
+
+// // 
+// // Bar Charts-----------------------
+
+.chart {
+    width: 45%;
+}
+
+.chart rect {
+  fill: $color-primary;
+}
+
+.chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+rect:hover{
+ fill: $color-secondary;
 }
