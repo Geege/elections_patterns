@@ -124,6 +124,11 @@ $font-body: 'Lato', sans-serif;
   color: $ps-brand-color;
 }
 
+.badge.brandcolor {
+  background-color: $ps-brand-color;
+  color: #fff;
+}
+
 // // 
 // // Badges ------------------------------
 
