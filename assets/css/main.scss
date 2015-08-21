@@ -9,11 +9,13 @@ a {
 // // 
 // // Project colors ---------------------
 
-$color-header:#7F7758;
-$color-primary: #C9BA81;
-$color-secondary: #FEE782;
-$color-grey: #BFBFBF;
+$color-header:#A87169;
+$color-primary: #524950;
+$color-secondary: #EF8373;
+$color-grey: #93979D;
 $color-body: black;
+
+
 
 $ps-brand-color: #F2AC17;
 
@@ -50,7 +52,7 @@ $font-body: 'Lato', sans-serif;
 	height: 100px;
 	margin: 0 5px 10px;
 	border-radius: 3px;
-    color: grey;
+    color: #fff;
 }
 
 .color-containers .color-header {
