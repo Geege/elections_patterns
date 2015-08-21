@@ -135,7 +135,7 @@ $font-body: 'Lato', sans-serif;
 .badge {
   font-family: $font-body;
   border-radius: 5px;
-  margin-bottom: 3px;
+  margin-bottom: 5px;
 }
 
 // // 
@@ -146,9 +146,31 @@ body {
   color: $color-body;
 }
 
-.font h1, .font h2, .font h3, .font h4 {
+.font h1, .font h2,.font h3, .font h4 {
   font-family: $font-title;
+  
+}
+
+.font h1, .font h2 {
   color: $color-header;
+}
+
+.font h3 {
+  color: $color-secondary;
+}
+
+.font h4 {
+  color: $color-grey  ;
+}
+
+a.link {
+  color: $color-grey;
+  text-decoration: none;
+}
+
+a.link:hover {
+  color: $color-secondary;
+  text-decoration: none;
 }
 
 // // 

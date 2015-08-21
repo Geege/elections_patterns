@@ -108,7 +108,7 @@
   .badge {
       font-family: $font-body;
       border-radius: 5px;
-      margin-bottom: 3px;
+      margin-bottom: 5px;
     }
       </pre>  
      </div>
@@ -125,12 +125,29 @@
       
       <div class="col-xs-12 col-md-12">
         <p>This is the body font. Ginza mary hennessey; kir vodka gimlet patron tennessee cowboy abhainn dearg, sangría glen scotia murphy's jacquin midori, gordon's bunnahabhain, glen keith gin pahit cherry herring. Tamagozake champagne cocktail blue blazer aviation grant's smirnoff planter's punch my fair lady gibbon piña colada brandy daisy, red lotus. Caipirinha 20th century quentão, </p>
+         <p>This is a <a class="link" href="#">link</a>.</p>
+         <p>And <a class="link" href="#">another</a>.</p>
       </div>
-    
+   
       <div class="col-xs-12 col-md-12">  
           <pre class="prettyprint">
-          <p>Header font<br>$font-title: 'Merriweather', serif;<br>href='http://fonts.googleapis.com/css?family=Merriweather:400,900,700'
-                  <br>Body font<br>$font-body: 'Lato', sans-serif;<br>href='http://fonts.googleapis.com/css?family=Lato'</p>
+          Header font
+          $font-title: 'Merriweather', serif;
+          href='http://fonts.googleapis.com/cssfamily=Merriweather:400,900,700'
+
+          Body font
+          $font-body: 'Lato', sans-serif;
+          href='http://fonts.googleapis.com/css?family=Lato'
+          
+          a.link {
+            color: $color-grey;
+            text-decoration: none;
+          }
+
+          a.link:hover {
+            color: $color-secondary;
+            text-decoration: none;
+          }
           </pre>  
        </div> 
     </section>
@@ -186,7 +203,7 @@
   </section>  
     
    <div class="col-xs-12 col-md-12">
-     <p>Created by Ginette Law -<a class="plot" href="www.plotandscatter/projects">Plot <span class="brandcolor">+</span> Scatter</a> 2015</p>
+     <p>Created by Ginette Law - <a class="plot" href="www.plotandscatter/projects">Plot <span class="brandcolor">+</span> Scatter</a> 2015</p>
    </div>
     
  </div>
