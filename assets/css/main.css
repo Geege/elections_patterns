@@ -109,17 +109,18 @@ button.btn {
   background-color: #93979D;
   border: none;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 3px;
   margin-bottom: 10px;
+  padding: 6px 30px;
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075); }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/geege\/Dropbox\/dev\/plot-and-scatter\/elections_patterns\/assets\/css\/main\.scss}line{font-family:\00003163}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/geege\/Dropbox\/dev\/plot-and-scatter\/elections_patterns\/assets\/css\/main\.scss}line{font-family:\00003164}}
 button.btn:hover {
   background-color: #524950;
   color: #fff; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/geege\/Dropbox\/dev\/plot-and-scatter\/elections_patterns\/assets\/css\/main\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/geege\/Dropbox\/dev\/plot-and-scatter\/elections_patterns\/assets\/css\/main\.scss}line{font-family:\00003169}}
 .btn.ghost {
   background-color: #fff;
   color: #524950;
@@ -128,24 +129,24 @@ button.btn:hover {
   border-color: #93979D;
   box-shadow: none; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/geege\/Dropbox\/dev\/plot-and-scatter\/elections_patterns\/assets\/css\/main\.scss}line{font-family:\00003177}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/geege\/Dropbox\/dev\/plot-and-scatter\/elections_patterns\/assets\/css\/main\.scss}line{font-family:\00003178}}
 .btn.ghost:hover {
   border-color: #524950; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/geege\/Dropbox\/dev\/plot-and-scatter\/elections_patterns\/assets\/css\/main\.scss}line{font-family:\00003184}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/geege\/Dropbox\/dev\/plot-and-scatter\/elections_patterns\/assets\/css\/main\.scss}line{font-family:\00003185}}
 .chart {
   width: 45%; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/geege\/Dropbox\/dev\/plot-and-scatter\/elections_patterns\/assets\/css\/main\.scss}line{font-family:\00003188}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/geege\/Dropbox\/dev\/plot-and-scatter\/elections_patterns\/assets\/css\/main\.scss}line{font-family:\00003189}}
 .chart rect {
   fill: #524950; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/geege\/Dropbox\/dev\/plot-and-scatter\/elections_patterns\/assets\/css\/main\.scss}line{font-family:\00003192}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/geege\/Dropbox\/dev\/plot-and-scatter\/elections_patterns\/assets\/css\/main\.scss}line{font-family:\00003193}}
 .chart text {
   fill: white;
   font: 10px sans-serif;
   text-anchor: end; }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/geege\/Dropbox\/dev\/plot-and-scatter\/elections_patterns\/assets\/css\/main\.scss}line{font-family:\00003198}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/geege\/Dropbox\/dev\/plot-and-scatter\/elections_patterns\/assets\/css\/main\.scss}line{font-family:\00003199}}
 rect:hover {
   fill: #EF8373; }
