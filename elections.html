@@ -71,20 +71,45 @@
       <div class="color-container bloc-light">Bloc</div>
       <div class="color-container other-dark">Other</div>
     </div>
+    
+    <div class= "col-xs-12 col-md-12"> 
+      <h3>Party Badges</h3>
+      <span class="badge pc-dark">PC</span>
+      <span class="badge pc-light">PC</span>
+      <span class="badge ndp-dark">NDP</span>
+      <span class="badge ndp-light">NDP</span>
+      <span class="badge lib-dark">Liberal</span>
+      <span class="badge lib-light">Liberal</span>
+      <span class="badge green-dark">Green</span>
+      <span class="badge green-light">Green</span>
+      <span class="badge bloc-dark">Bloc</span>
+      <span class="badge bloc-light">Bloc</span>
+      <span class="badge other-dark">Other</span>
+      
+      <span class="badge brandcolor">Close race!</span>
+    </div>
  
     <div class="col-xs-12 col-md-12">  
       <pre class="prettyprint">
-    $pc-dark: #1A4782;
-    $pc-light: #7CA4BF;
-    $ndp-dark: #F37221;
-    $ndp-light: #FEA66F;
-    $lib-dark: #D71920;
-    $lib-light: #FE5B5B;
-    $green-dark: #378D30;
-    $green-light: #7FBF7A;
-    $bloc-dark: #4E99DC;
-    $bloc-light: #66C3DC;
-    $other-dark: #77117F;
+  $pc-dark: #1A4782;
+  $pc-light: #7CA4BF;
+  $ndp-dark: #F37221;
+  $ndp-light: #FEA66F;
+  $lib-dark: #D71920;
+  $lib-light: #FE5B5B;
+  $green-dark: #378D30;
+  $green-light: #7FBF7A;
+  $bloc-dark: #4E99DC;
+  $bloc-light: #66C3DC;
+  $other-dark: #77117F;
+  
+  $ps-brand-color: #F2AC17;
+  
+  .badge {
+      font-family: $font-body;
+      border-radius: 5px;
+      margin-bottom: 3px;
+    }
       </pre>  
      </div>
     </section>
@@ -110,13 +135,16 @@
        </div> 
     </section>
     
-    <!-- Buttons --> <!-- Fix Toggle-->
+    <!-- Buttons --> 
     <section class= "col-xs-12 col-md-12">
       <h3>Buttons</h3>
       <button type="button" class="btn">Button</button>
-      <button type="button" class="btn active" data-toggle="button" aria-pressed="true" autocomplete="off">Toggle Button</button>
+      <button type="button" class="btn ghost">Ghost Button</button>
+      <button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">
+  Single toggle
+</button>
       
-      <div class="col-xs-12 col-md-12">  
+    <div class="col-xs-12 col-md-12">  
        <pre class="prettyprint lang-css">
   CSS
       button.btn {
@@ -129,10 +157,21 @@
         -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
         box-shadow: inset 0 1px 0 rgba(255, 255, 255, .15), 0 1px 1px rgba(0, 0, 0, .075);
       }
-
       button.btn:hover {
         background-color: $color-primary;
         color: #fff;
+      }
+      
+      .btn.ghost {
+        background-color: #fff;
+        color: $color-primary;
+        border: 1.5px;
+        border-style: solid;
+        border-color: $color-grey;
+        box-shadow: none;  
+      }
+      .btn.ghost:hover {
+        border-color:$color-primary;
       }
        </pre>  
       </div>  
